@@ -47,24 +47,20 @@ sharpened = cv2.filter2D(blend, -1, sharp_kernel)
 plt.subplot(1, 4, 1)
 plt.imshow(cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
 plt.title('Original')
-plt.xlabel('source : instagram/oasisatgracebay', fontsize=7)
 
 # ROI
 plt.subplot(1, 4, 2)
 plt.imshow(cv2.cvtColor(roi_rotated, cv2.COLOR_BGR2RGB))
 plt.title('ROI')
-plt.xlabel('90 Rotation', fontsize=7)
 
 # Blend
 plt.subplot(1, 4, 3)
 plt.imshow(cv2.cvtColor(blend, cv2.COLOR_BGR2RGB))
 plt.title('Enhancement')
-plt.xlabel('Blending', fontsize=7)
 
 # Sharpened
 plt.subplot(1, 4, 4)
 plt.imshow(cv2.cvtColor(sharpened, cv2.COLOR_BGR2RGB))
 plt.title('Filtering')
-plt.xlabel('Sharpening', fontsize=7)
 
 plt.show()
